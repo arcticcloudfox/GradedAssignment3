@@ -49,4 +49,5 @@ let rover = new Rover(98382);
 let response = rover.receiveMessage(message);
 
 console.log(response);
+console.log('Test');
 module.exports = Rover;
