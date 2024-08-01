@@ -21,12 +21,12 @@ class Rover {
           });
           }
           else if(command.commandType === "MODE_CHANGE") {
-            this.mode = commands.value;
+            this.mode = command.value;
             response.push({completed: true});
           }
           else if(command.commandType === "MOVE"){
             if(this.mode === "NORMAL"){
-              this.position = commands.value;
+              this.position = command.value;
               response.push({completed: true});
             }
             else if(this.mode === "LOW_POWER"){
